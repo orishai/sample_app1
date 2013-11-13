@@ -5,6 +5,8 @@ ruby '1.9.3'
 gem 'rails', '4.0.1'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'therubyracer', :platform => :ruby
+gem 'execjs'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -27,6 +29,8 @@ group :test do
   # gem 'win32console', '1.3.2'
   # gem 'wdm', '0.1.0'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 gem 'sass-rails', '4.0.1'
